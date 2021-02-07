@@ -71,8 +71,8 @@ contract BahariToken is ERC20Interface, SafeMath {
     constructor() public {
         symbol = "Bahari";
         name = "Bahari Coin";
-        decimals = 18; 
-        _totalSupply = 10000000; //Updated supply to 10 mill, enough to have fun with
+        decimals = 18;
+        _totalSupply = 10000000000000000000000000;
         balances[0x50bb9c69B6353eFd4647182d3DB983468a3698a7] = _totalSupply;
         emit Transfer(address(0), 0x50bb9c69B6353eFd4647182d3DB983468a3698a7, _totalSupply);
     }
